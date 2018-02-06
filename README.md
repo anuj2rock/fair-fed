@@ -12,8 +12,13 @@ Thought of putting up a simple approach of using convolutional neural networks t
 So, Neural N/W identifies bird in view, if it's crow, a python application is used to make noise, trigger motor attached to RPi3 which retracts feeding tray and keeps scanning images of view to make sure this state is maintained till crows have flown away.
 
 ## Code walk through (Work in progress)
+* RPC based architecture involves following two python modules. This approach clocks 500ms best time.
 
 [classifier_server.py](classifier_server.py)
-
 [pi_module.py](pi_module.py)
+
+
+* Standalone pi3 based approach involves single [on_pi_classifier.py](on_pi_classifier.py) module. This approach clocks best time of 2000ms.
+
+<b>Note: Code shared here includes only the core ML based image classification and trigger logic. Complete application has not been uploaded here.</b>
 
